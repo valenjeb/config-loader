@@ -4,29 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "be337bafd9307ddbc52589c09661debe",
+    "content-hash": "3a86beef607e31b3489efe8d9de98dbc",
     "packages": [
         {
             "name": "devly/repository",
             "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:valenjeb/repository.git",
-                "reference": "0e9520aa3be2c274dbda5aea79884910eacd15f2"
+                "url": "https://github.com/valenjeb/repository.git",
+                "reference": "51b8397e30eccc68e6b9d658b3a1a7b36eda9500"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/valenjeb/repository/zipball/0e9520aa3be2c274dbda5aea79884910eacd15f2",
-                "reference": "0e9520aa3be2c274dbda5aea79884910eacd15f2",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://devly.repo.repman.io/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "url": "https://api.github.com/repos/valenjeb/repository/zipball/51b8397e30eccc68e6b9d658b3a1a7b36eda9500",
+                "reference": "51b8397e30eccc68e6b9d658b3a1a7b36eda9500",
+                "shasum": ""
             },
             "require": {
+                "ext-json": "*",
                 "php": "^7.4 || ^8.0"
             },
             "require-dev": {
@@ -41,35 +36,13 @@
                     "Devly\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Devly\\Tests\\": "tests"
-                }
-            },
-            "notification-url": "https://devly.repo.repman.io/downloads",
-            "scripts": {
-                "lint": [
-                    "@php ./vendor/bin/phpcs"
-                ],
-                "report": [
-                    "@php ./vendor/bin/phpcs --report=summary"
-                ],
-                "fix": [
-                    "@php ./vendor/bin/phpcbf"
-                ],
-                "phpstan": [
-                    "@php ./vendor/bin/phpstan"
-                ],
-                "tests": [
-                    "@php ./vendor/bin/phpunit --testdox --colors=always"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "description": "PHP data repository object with array access using dot notation",
             "support": {
-                "source": "https://github.com/valenjeb/repository/tree/1.0.0",
-                "issues": "https://github.com/valenjeb/repository/issues"
+                "issues": "https://github.com/valenjeb/repository/issues",
+                "source": "https://github.com/valenjeb/repository/tree/1.0.0"
             },
-            "time": "2022-09-29T22:20:44+00:00"
+            "time": "2022-10-25T10:32:43+00:00"
         }
     ],
     "packages-dev": [
@@ -2358,16 +2331,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v5.4.14",
+            "version": "v5.4.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "e83fe9a72011f07c662da46a05603d66deeeb487"
+                "reference": "4cd2e3ea301aadd76a4172756296fe552fb45b0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/e83fe9a72011f07c662da46a05603d66deeeb487",
-                "reference": "e83fe9a72011f07c662da46a05603d66deeeb487",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/4cd2e3ea301aadd76a4172756296fe552fb45b0b",
+                "reference": "4cd2e3ea301aadd76a4172756296fe552fb45b0b",
                 "shasum": ""
             },
             "require": {
@@ -2413,7 +2386,7 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/yaml/tree/v5.4.14"
+                "source": "https://github.com/symfony/yaml/tree/v5.4.23"
             },
             "funding": [
                 {
@@ -2429,7 +2402,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-10-03T15:15:50+00:00"
+            "time": "2023-04-23T19:33:36+00:00"
         },
         {
             "name": "theseer/tokenizer",
