@@ -61,8 +61,10 @@ class FileStorage implements IStorage
             throw new StorageError($lastError['message']);
         }
 
-        // phpcs:ignore Generic.Files.LineLength.TooLong
-        $content = sprintf("<?php\n\n/** This file generated automatically. any changes to this file will be lost. */\n\nreturn %s;\n", var_export($content, true));
+        $content = sprintf(
+            "<?php\n\n/** This file generated automatically. any changes to this file will be lost. */\n\nreturn %s;\n",
+            var_export($content, true)
+        );
 
         $result = fwrite($resource, $content);
 

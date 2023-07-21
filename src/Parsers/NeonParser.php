@@ -6,6 +6,7 @@ namespace Devly\ConfigLoader\Parsers;
 
 use Devly\ConfigLoader\Exceptions\ParseError;
 use Devly\ConfigLoader\File;
+use Nette\Neon\Neon;
 use RuntimeException;
 use Throwable;
 
@@ -23,8 +24,7 @@ class NeonParser extends Parser
         }
 
         try {
-            // phpcs:ignore SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly.ReferenceViaFullyQualifiedName
-            return \Nette\Neon\Neon::decodeFile($file->path());
+            return Neon::decodeFile($file->path());
         } catch (Throwable $e) {
             throw new ParseError($file->path(), $e->getMessage());
         }
